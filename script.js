@@ -177,6 +177,25 @@ function initializeContactForm() {
 
   if (!contactForm) return
 
+  // Set all input borders to neutral on load and remove browser's green border
+  const requiredFields = ["prenom", "nom", "email", "sujet", "message", "telephone"];
+  requiredFields.forEach((field) => {
+    const input = contactForm.querySelector(`[name="${field}"]`)
+    if (input) {
+      input.style.borderColor = "#d1d5db"
+      input.style.boxShadow = "none"
+      input.classList.remove("valid")
+      input.classList.remove("invalid")
+      // Remove any input event that might change border color
+      input.oninput = null;
+      // Remove browser's green border for valid input
+      input.addEventListener("input", function() {
+        this.style.borderColor = "#d1d5db";
+        this.style.boxShadow = "none";
+      });
+    }
+  });
+
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault()
 
@@ -184,10 +203,8 @@ function initializeContactForm() {
     const formData = new FormData(contactForm)
     const data = Object.fromEntries(formData)
 
-    // Validate required fields
-    const requiredFields = ["prenom", "nom", "email", "sujet", "message"]
+    // Validate required fields only on submit
     let isValid = true
-
     requiredFields.forEach((field) => {
       const input = contactForm.querySelector(`[name="${field}"]`)
       if (!data[field] || !data[field].trim()) {
@@ -195,11 +212,24 @@ function initializeContactForm() {
         input.style.borderColor = "#ef4444"
         input.style.boxShadow = "0 0 0 3px rgba(239, 68, 68, 0.1)"
       } else {
-        input.style.borderColor = "#d1d5db"
-        input.style.boxShadow = "none"
+        // Special validation for telephone
+        if (field === "telephone") {
+          const tel = data[field].trim()
+          const telRegex = /^(\+212|06|05|07)\d{8}$/
+          if (!telRegex.test(tel)) {
+            isValid = false
+            input.style.borderColor = "#ef4444"
+            input.style.boxShadow = "0 0 0 3px rgba(239, 68, 68, 0.1)"
+          } else {
+            input.style.borderColor = "#d1d5db"
+            input.style.boxShadow = "none"
+          }
+        } else {
+          input.style.borderColor = "#d1d5db"
+          input.style.boxShadow = "none"
+        }
       }
     })
-
     if (!isValid) {
       showNotification("Veuillez remplir tous les champs obligatoires.", "error")
       return
@@ -222,6 +252,14 @@ function initializeContactForm() {
       submitBtn.innerHTML = "✓ Message envoyé!"
       submitBtn.classList.add("form-success")
       contactForm.reset()
+      // Reset all borders to neutral after reset
+      requiredFields.forEach((field) => {
+        const input = contactForm.querySelector(`[name="${field}"]`)
+        if (input) {
+          input.style.borderColor = "#d1d5db"
+          input.style.boxShadow = "none"
+        }
+      })
       showNotification("Votre message a été envoyé avec succès!", "success")
 
       // Reset button after 3 seconds
