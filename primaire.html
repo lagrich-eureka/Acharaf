@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Charaf École - Primaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <img src="./imgs/Logo.jpg" alt="logo" />
+                    </div>
+                    <div class="logo-text">
+                        <h1>AL CHARAF</h1>
+                        <span>ÉCOLE</span>
+                    </div>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li class="dropdown">
+                            <span class="dropdown-toggle active">
+                                Niveaux
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                            <div class="dropdown-menu">
+                                <a href="primaire.html" class="active">🌱 Primaire</a>
+                                <a href="college.html">🔬 Collège</a>
+                                <a href="lycee.html">🎓 Lycée</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-menu">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <div class="mobile-submenu">
+                    <p style="color: #6b7280; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">Niveaux:</p>
+                    <a href="primaire.html">🌱 Primaire</a>
+                    <a href="college.html">🔬 Collège</a>
+                    <a href="lycee.html">🎓 Lycée</a>
+                </div>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="page-header primaire">
+            <div class="container">
+                <div class="level-hero-content">
+                    <div class="slide-in-left">
+                        <div class="level-hero-text">
+                            <span class="level-hero-icon">🌱</span>
+                            <div>
+                                <h1>École Primaire</h1>
+                                <p class="level-subtitle">CP - CM2</p>
+                            </div>
+                        </div>
+                        <p>Les premières années d'apprentissage dans un environnement chaleureux et stimulant pour nos plus jeunes élèves.</p>
+                        <div class="level-icons">
+                            <span>📚</span>
+                            <span>✏️</span>
+                            <span>🌟</span>
+                            <span>🎨</span>
+                        </div>
+                    </div>
+
+                    <div class="level-hero-image slide-in-right">
+                        <img src="./imgs/primaire/primaire 4.jpg" alt="Élèves du primaire">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-text slide-in-left">
+                        <h2>Un Environnement Bienveillant</h2>
+                        <p>Notre école primaire offre un cadre chaleureux et sécurisant où chaque enfant peut s'épanouir. Nous croyons que les premières années d'apprentissage sont cruciales pour développer l'amour de l'école et la curiosité naturelle des enfants.</p>
+
+                        <h3>Nos Objectifs</h3>
+                        <ul class="objectives-list">
+                            <li>
+                                <span style="color: #16a34a; font-size: 1.25rem;">🎯</span>
+                                <span>Développer les compétences fondamentales en lecture, écriture et mathématiques</span>
+                            </li>
+                            <li>
+                                <span style="color: #16a34a; font-size: 1.25rem;">🎯</span>
+                                <span>Encourager la créativité et l'expression artistique</span>
+                            </li>
+                            <li>
+                                <span style="color: #16a34a; font-size: 1.25rem;">🎯</span>
+                                <span>Cultiver les valeurs de respect et de coopération</span>
+                            </li>
+                            <li>
+                                <span style="color: #16a34a; font-size: 1.25rem;">🎯</span>
+                                <span>Stimuler la curiosité et l'esprit critique</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-image slide-in-right">
+                        <img src="./imgs/primaire/primaire 5.jpg" alt="Activités primaire">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Notre Programme</h2>
+
+                <div class="curriculum-grid">
+                    <div class="curriculum-item slide-in-up">
+                        <div class="curriculum-icon">📖</div>
+                        <h3>Français</h3>
+                        <p>Apprentissage de la lecture, de l'écriture et de l'expression orale</p>
+                    </div>
+                    <div class="curriculum-item slide-in-up" style="animation-delay: 0.1s;">
+                        <div class="curriculum-icon">🔢</div>
+                        <h3>Mathématiques</h3>
+                        <p>Développement du raisonnement logique et des compétences numériques</p>
+                    </div>
+                    <div class="curriculum-item slide-in-up" style="animation-delay: 0.2s;">
+                        <div class="curriculum-icon">🌍</div>
+                        <h3>Éveil</h3>
+                        <p>Découverte du monde, sciences naturelles et sociales</p>
+                    </div>
+                    <div class="curriculum-item slide-in-up" style="animation-delay: 0.3s;">
+                        <div class="curriculum-icon">🎨</div>
+                        <h3>Arts</h3>
+                        <p>Expression artistique, musique et activités créatives</p>
+                    </div>
+                    <div class="curriculum-item slide-in-up" style="animation-delay: 0.4s;">
+                        <div class="curriculum-icon">⚽</div>
+                        <h3>Sport</h3>
+                        <p>Développement moteur et esprit d'équipe</p>
+                    </div>
+                    <div class="curriculum-item slide-in-up" style="animation-delay: 0.5s;">
+                        <div class="curriculum-icon">💻</div>
+                        <h3>Informatique</h3>
+                        <p>Initiation aux outils numériques adaptés à l'âge</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Activités Spéciales</h2>
+
+                <div class="grid grid-3">
+                    <div class="card slide-in-up">
+                        <!-- <img src="/placeholder.svg?height=200&width=300&text=Reading+Corner" alt="Coin Lecture" class="card-image"> -->
+                        <img src="./imgs/primaire/primaire coin lecture.jpg" alt="Coin Lecture" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Coin Lecture</h3>
+                            <p class="card-description">Un espace dédié à la découverte des livres et au plaisir de lire</p>
+                        </div>
+                    </div>
+
+                    <div class="card slide-in-up" style="animation-delay: 0.2s;">
+                        <!-- <img src="/placeholder.svg?height=200&width=300&text=Creative+Workshop" alt="Ateliers Créatifs" class="card-image"> -->
+                        <img src="./imgs/primaire/primaire ateliers 1.jpg" alt="Ateliers Créatifs" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Ateliers Créatifs</h3>
+                            <p class="card-description">Développement de la créativité à travers diverses activités manuelles</p>
+                        </div>
+                    </div>
+
+                    <div class="card slide-in-up" style="animation-delay: 0.4s;">
+                        <!-- <img src="/placeholder.svg?height=200&width=300&text=School+Garden" alt="Jardin Pédagogique" class="card-image"> -->
+                        <img src="./imgs/primaire/primaire jardins.jpg" alt="Jardin Pédagogique" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Jardin Pédagogique</h3>
+                            <p class="card-description">Apprentissage par l'observation et le contact avec la nature</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Small Contact Form -->
+    <section class="small-contact-section">
+        <div class="container">
+            <div class="small-contact-container">
+                <h2 class="fade-in-up">Une Question ?</h2>
+                <p class="fade-in-up" style="animation-delay: 0.1s;">Envoyez-nous un message rapide et nous vous répondrons dans les plus brefs délais</p>
+                <form class="small-contact-form fade-in-up" style="animation-delay: 0.2s;" id="smallContactForm">
+                    <div class="small-form-grid">
+                        <input type="email" name="email" placeholder="Votre adresse email" required>
+                        <input type="text" name="subject" placeholder="Sujet de votre message" required>
+                    </div>
+                    <textarea name="message" placeholder="Votre message..." required rows="4"></textarea>
+                    <button type="submit">Envoyer le Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="petal petal-1"></div>
+                            <div class="petal petal-2"></div>
+                            <div class="petal petal-3"></div>
+                            <div class="petal petal-4"></div>
+                            <div class="petal petal-5"></div>
+                            <div class="petal petal-6"></div>
+                        </div>
+                        <h3>AL CHARAF ÉCOLE</h3>
+                    </div>
+                    <p>Excellence éducative et innovation pédagogique</p>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <p>123 Boulevard Anfa<br>Casablanca, Maroc</p>
+                    <p>Tél: +212 5 22 XX XX XX</p>
+                    <p>Email: contact@alcharafecole.ma</p>
+                </div>
+
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Niveaux</h4>
+                    <ul>
+                        <li><a href="primaire.html">Primaire</a></li>
+                        <li><a href="college.html">Collège</a></li>
+                        <li><a href="lycee.html">Lycée</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Al Charaf École. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

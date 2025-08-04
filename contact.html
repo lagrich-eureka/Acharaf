@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Charaf École - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <div class="petal petal-1"></div>
+                        <div class="petal petal-2"></div>
+                        <div class="petal petal-3"></div>
+                        <div class="petal petal-4"></div>
+                        <div class="petal petal-5"></div>
+                        <div class="petal petal-6"></div>
+                    </div>
+                    <div class="logo-text">
+                        <h1>AL CHARAF</h1>
+                        <span>ÉCOLE</span>
+                    </div>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li class="dropdown">
+                            <span class="dropdown-toggle">
+                                Niveaux
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                            <div class="dropdown-menu">
+                                <a href="primaire.html">🌱 Primaire</a>
+                                <a href="college.html">🔬 Collège</a>
+                                <a href="lycee.html">🎓 Lycée</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-menu">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <div class="mobile-submenu">
+                    <p style="color: #6b7280; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">Niveaux:</p>
+                    <a href="primaire.html">🌱 Primaire</a>
+                    <a href="college.html">🔬 Collège</a>
+                    <a href="lycee.html">🎓 Lycée</a>
+                </div>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="fade-in">Contactez-nous</h1>
+                <p class="fade-in" style="animation-delay: 0.2s;">Nous sommes là pour répondre à toutes vos questions</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="slide-in-left">
+                        <div class="contact-info">
+                            <h2>Informations de Contact</h2>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <h3>Adresse</h3>
+                                    <p>123 Boulevard Anfa<br>Casablanca 20000<br>Maroc</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <h3>Téléphone</h3>
+                                    <p>+212 5 22 XX XX XX<br>+212 6 XX XX XX XX (Mobile)</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">✉️</div>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>contact@alcharafecole.ma<br>admissions@alcharafecole.ma</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">🕒</div>
+                                <div>
+                                    <h3>Horaires d'Ouverture</h3>
+                                    <p>Lundi - Vendredi: 8h00 - 17h00<br>Samedi: 8h00 - 12h00<br>Dimanche: Fermé</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="visit-info">
+                            <h3>Planifier une Visite</h3>
+                            <p>Nous vous invitons à visiter notre campus pour découvrir nos installations et rencontrer notre équipe pédagogique. Les visites se font sur rendez-vous.</p>
+                            <p><strong>Journées Portes Ouvertes :</strong><br>Tous les premiers samedis du mois de 9h00 à 12h00</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="slide-in-right">
+                        <div class="contact-form-container">
+                            <h2>Envoyez-nous un Message</h2>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="prenom">Prénom *</label>
+                                        <input type="text" id="prenom" name="prenom" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nom">Nom *</label>
+                                        <input type="text" id="nom" name="nom" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telephone">Téléphone</label>
+                                        <input type="tel" id="telephone" name="telephone">
+                                    </div>
+                                </div>
+
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="typeContact">Type de Demande *</label>
+                                        <select id="typeContact" name="typeContact" required>
+                                            <option value="">Sélectionnez...</option>
+                                            <option value="admission">Demande d'Admission</option>
+                                            <option value="information">Demande d'Information</option>
+                                            <option value="visite">Planifier une Visite</option>
+                                            <option value="pedagogie">Questions Pédagogiques</option>
+                                            <option value="administration">Questions Administratives</option>
+                                            <option value="autre">Autre</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="niveau">Niveau Concerné</label>
+                                        <select id="niveau" name="niveau">
+                                            <option value="">Sélectionnez...</option>
+                                            <option value="primaire">Primaire (CP - CM2)</option>
+                                            <option value="college">Collège (6ème - 3ème)</option>
+                                            <option value="lycee">Lycée (2nde - Terminale)</option>
+                                            <option value="tous">Tous les niveaux</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sujet">Sujet *</label>
+                                    <input type="text" id="sujet" name="sujet" placeholder="Résumez brièvement votre demande" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" placeholder="Décrivez votre demande en détail..." required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                        <input type="checkbox" id="newsletter" name="newsletter" style="margin: 0;">
+                                        <span style="font-size: 0.875rem;">Je souhaite recevoir la newsletter de l'école</span>
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="form-submit" id="submitBtn">
+                                    Envoyer le Message
+                                </button>
+
+                                <p style="font-size: 0.75rem; color: #6b7280; margin-top: 1rem;">
+                                    * Champs obligatoires. Vos données personnelles sont protégées et ne seront utilisées que pour répondre à votre demande.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Notre Localisation</h2>
+                <div class="map-container fade-in-up" style="animation-delay: 0.2s;">
+                    <img src="./imgs/Outsite.jpg" alt="Localisation Al Charaf École" class="map-image">
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <p style="color: #6b7280; margin-bottom: 1rem;">
+                        Notre école est facilement accessible en transport en commun et dispose d'un parking pour les parents.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="font-size: 1.25rem;">🚌</span>
+                            <span style="font-size: 0.875rem; color: #374151;">Arrêt de bus à 100m</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="font-size: 1.25rem;">🚗</span>
+                            <span style="font-size: 0.875rem; color: #374151;">Parking disponible</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="font-size: 1.25rem;">🚇</span>
+                            <span style="font-size: 0.875rem; color: #374151;">Métro à 500m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Questions Fréquentes</h2>
+                <div class="grid grid-2">
+                    <div class="card slide-in-up">
+                        <div class="card-content">
+                            <h3 class="card-title">Comment inscrire mon enfant ?</h3>
+                            <p class="card-description">Les inscriptions se font en ligne ou sur rendez-vous. Contactez notre service des admissions pour connaître les documents requis et les dates limites.</p>
+                        </div>
+                    </div>
+                    <div class="card slide-in-up" style="animation-delay: 0.1s;">
+                        <div class="card-content">
+                            <h3 class="card-title">Quels sont les frais de scolarité ?</h3>
+                            <p class="card-description">Les frais varient selon le niveau. Contactez-nous pour obtenir le détail des tarifs et les modalités de paiement. Des bourses sont disponibles selon les critères sociaux.</p>
+                        </div>
+                    </div>
+                    <div class="card slide-in-up" style="animation-delay: 0.2s;">
+                        <div class="card-content">
+                            <h3 class="card-title">Y a-t-il un service de transport ?</h3>
+                            <p class="card-description">Oui, nous proposons un service de transport scolaire couvrant plusieurs quartiers de Casablanca. Les itinéraires et tarifs sont disponibles sur demande.</p>
+                        </div>
+                    </div>
+                    <div class="card slide-in-up" style="animation-delay: 0.3s;">
+                        <div class="card-content">
+                            <h3 class="card-title">Proposez-vous des activités extra-scolaires ?</h3>
+                            <p class="card-description">Nous offrons de nombreuses activités : sport, musique, arts, clubs scientifiques, langues étrangères. Le programme complet est disponible à la rentrée.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="petal petal-1"></div>
+                            <div class="petal petal-2"></div>
+                            <div class="petal petal-3"></div>
+                            <div class="petal petal-4"></div>
+                            <div class="petal petal-5"></div>
+                            <div class="petal petal-6"></div>
+                        </div>
+                        <h3>AL CHARAF ÉCOLE</h3>
+                    </div>
+                    <p>Excellence éducative et innovation pédagogique</p>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <p>123 Boulevard Anfa<br>Casablanca, Maroc</p>
+                    <p>Tél: +212 5 22 XX XX XX</p>
+                    <p>Email: contact@alcharafecole.ma</p>
+                </div>
+
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Niveaux</h4>
+                    <ul>
+                        <li><a href="primaire.html">Primaire</a></li>
+                        <li><a href="college.html">Collège</a></li>
+                        <li><a href="lycee.html">Lycée</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Al Charaf École. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

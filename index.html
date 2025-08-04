@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etablissement Acharaf - Excellence Éducative</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <img src="/images/logo.jpg" alt="Etablissement Acharaf Logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>ETABLISSEMENT ACHARAF</h1>
+                        <span>ÉCOLE</span>
+                    </div>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li class="dropdown">
+                            <span class="dropdown-toggle">
+                                Niveaux
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                            <div class="dropdown-menu">
+                                <a href="maternelle.html">🧸 Maternelle</a>
+                                <a href="primaire.html">🌱 Primaire</a>
+                                <!-- <a href="secondaire.html">🎓 Secondaire</a> -->
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-menu">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <div class="mobile-submenu">
+                    <p style="color: #6b7280; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">Niveaux:</p>
+                    <a href="maternelle.html">🧸 Maternelle</a>
+                    <a href="primaire.html">🌱 Primaire</a>
+                    <a href="secondaire.html">🎓 Secondaire</a>
+                </div>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="/placeholder.svg?height=600&width=1200&text=Hero+Student" alt="Hero image 1" class="hero-image active">
+            <img src="/placeholder.svg?height=600&width=1200&text=Students+Group" alt="Hero image 2" class="hero-image">
+            <img src="/placeholder.svg?height=600&width=1200&text=Classroom" alt="Hero image 3" class="hero-image">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="container">
+                    <div class="fade-in">
+                        <h1>Découvrez Etablissement Acharaf</h1>
+                        <p>Une éducation d'excellence qui prépare nos élèves à façonner l'avenir avec confiance et créativité</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">Contacter nous</button>
+                            <button class="btn btn-secondary">En Savoir Plus</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-dots">
+                <button class="hero-dot active" data-slide="0"></button>
+                <button class="hero-dot" data-slide="1"></button>
+                <button class="hero-dot" data-slide="2"></button>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Une Communauté Où Les Élèves Façonnent Leur Parcours</h2>
+
+                <div class="grid grid-2" style="align-items: center;">
+                    <div class="slide-in-left" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="position: relative; height: 250px; border-radius: 12px; overflow: hidden;">
+                            <img src="/placeholder.svg?height=250&width=400&text=Students+Community" alt="Communauté Etablissement Acharaf" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <p style="font-size: 1.125rem; line-height: 1.7; color: #374151;">
+                            Etablissement Acharaf est un établissement d'excellence, indépendant et innovant, situé à Marrakesh. Notre approche pédagogique unique combine tradition marocaine et méthodes modernes pour préparer nos élèves de la maternelle au secondaire à devenir des citoyens responsables et créatifs.
+                        </p>
+                    </div>
+
+                    <div class="grid" style="gap: 1.5rem;">
+                        <a href="about.html" class="action-card slide-in-up" style="background-color: #fed7c7; color: #ea580c;">
+                            <div class="action-card-icon">🔍</div>
+                            <h3 class="action-card-title">En Savoir Plus</h3>
+                        </a>
+                    <a href="maternelle.html" class="action-card slide-in-up" style="background-color: #fff3cd; color: #374151; animation-delay: 0.1s;">
+                            <div class="action-card-icon">🏫</div>
+                            <h3 class="action-card-title">Nos Niveaux</h3>
+                        </a>
+                        <a href="contact.html" class="action-card slide-in-up" style="background-color: #e8f5e8; color: #2d5016; animation-delay: 0.2s;">
+                            <div class="action-card-icon">📝</div>
+                            <h3 class="action-card-title">Nous Contacter</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-4">
+                    <div class="stat-card scale-in">
+                        <div class="stat-icon">👨‍🎓 👩‍🎓</div>
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Élèves épanouis</div>
+                    </div>
+                    <div class="stat-card scale-in" style="animation-delay: 0.1s;">
+                        <div class="stat-icon">👩‍🏫 👨‍🏫</div>
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Éducateurs dévoués</div>
+                    </div>
+                    <div class="stat-card scale-in" style="animation-delay: 0.2s;">
+                        <div class="stat-icon">📚</div>
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Suivi pédagogique personnalisé</div>
+                    </div>
+                    <div class="stat-card scale-in" style="animation-delay: 0.3s;">
+                        <div class="stat-icon">🏫</div>
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">Ans de confiance et d’excellence</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Nos Programmes</h2>
+                <div class="grid grid-3">
+                    <a href="maternelle.html" class="program-card slide-in-up" style="background-color: #ffe066; color: #1b4332;">
+                        <div class="program-card-image">
+                            <img src="./imgs/placeholder.svg" alt="Maternelle">
+                            <div class="program-card-overlay" style="background: rgba(255, 224, 102, 0.85); color: #1b4332;">
+                                <div class="program-card-icon">🧸</div>
+                                <div class="program-card-info">
+                                    <h3>Maternelle</h3>
+                                    <p>3 - 5 ans</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-card-body">
+                            <p>Premiers pas dans l'apprentissage avec jeux éducatifs et développement social</p>
+                            <span class="program-card-link">Découvrir →</span>
+                        </div>
+                    </a>
+                    <a href="primaire.html" class="program-card slide-in-up" style="background-color: #fffbe6; color: #1b4332; animation-delay: 0.2s;">
+                        <div class="program-card-image">
+                            <img src="./imgs/primaire/primaire 1.jpg" alt="Primaire">
+                            <div class="program-card-overlay" style="background: rgba(255, 251, 230, 0.85); color: #1b4332;">
+                                <div class="program-card-icon">🌱</div>
+                                <div class="program-card-info">
+                                    <h3>Primaire</h3>
+                                    <p>6 - 11 ans</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-card-body">
+                            <p>Fondations solides dans un environnement bienveillant et stimulant</p>
+                            <span class="program-card-link">Découvrir →</span>
+                        </div>
+                    </a>
+                    <a href="secondaire.html" class="program-card slide-in-up" style="background-color: #e8f5e8; color: #1b4332; animation-delay: 0.4s;">
+                        <div class="program-card-image">
+                            <img src="./imgs/college/middleSchool 1.jpg" alt="Secondaire">
+                            <div class="program-card-overlay" style="background: rgba(232, 245, 232, 0.85); color: #1b4332;">
+                                <div class="program-card-icon">🎓</div>
+                                <div class="program-card-info">
+                                    <h3>Secondaire</h3>
+                                    <p>12 - 15 ans</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-card-body">
+                            <p>Accompagnement vers l'autonomie et la réussite scolaire</p>
+                            <span class="program-card-link">Découvrir →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Notre Environnement</h2>
+
+                <div class="grid grid-3">
+                    <div class="gallery-item scale-in">
+                        <img src="/placeholder.svg?height=250&width=300&text=Library" alt="Bibliothèque Moderne">
+                        <div class="gallery-overlay">
+                            <h3>Bibliothèque Moderne</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item scale-in" style="animation-delay: 0.1s;">
+                        <img src="/placeholder.svg?height=250&width=300&text=Science+Lab" alt="Laboratoire de Sciences">
+                        <div class="gallery-overlay">
+                            <h3>Laboratoire de Sciences</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item scale-in" style="animation-delay: 0.2s;">
+                        <img src="/placeholder.svg?height=250&width=300&text=Computer+Lab" alt="Salle Informatique">
+                        <div class="gallery-overlay">
+                            <h3>Salle Informatique</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item scale-in" style="animation-delay: 0.3s;">
+                        <img src="/placeholder.svg?height=250&width=300&text=Playground" alt="Cour de Récréation">
+                        <div class="gallery-overlay">
+                            <h3>Cour de Récréation</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item scale-in" style="animation-delay: 0.4s;">
+                        <img src="/placeholder.svg?height=250&width=300&text=Classroom" alt="Salles de Classe">
+                        <div class="gallery-overlay">
+                            <h3>Salles de Classe</h3>
+                        </div>
+                    </div>
+                    <div class="gallery-item scale-in" style="animation-delay: 0.5s;">
+                        <img src="/placeholder.svg?height=250&width=300&text=School+Building" alt="Campus Principal">
+                        <div class="gallery-overlay">
+                            <h3>Campus Principal</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Actualités</h2>
+
+                <div class="grid grid-3">
+                    <article class="news-card slide-in-up">
+                        <img src="/placeholder.svg?height=200&width=300&text=Open+House" alt="Journée Portes Ouvertes" class="news-card-image">
+                        <div class="news-card-content">
+                            <span class="news-date">15 Janvier 2024</span>
+                            <h3 class="news-title">Journée Portes Ouvertes</h3>
+                            <p class="news-description">Venez découvrir notre établissement et rencontrer notre équipe pédagogique.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-card slide-in-up" style="animation-delay: 0.1s;">
+                        <img src="/placeholder.svg?height=200&width=300&text=Science+Competition" alt="Concours de Sciences" class="news-card-image">
+                        <div class="news-card-content">
+                            <span class="news-date">10 Janvier 2024</span>
+                            <h3 class="news-title">Concours de Sciences</h3>
+                            <p class="news-description">Nos élèves brillent au concours régional de sciences.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-card slide-in-up" style="animation-delay: 0.2s;">
+                        <img src="/placeholder.svg?height=200&width=300&text=New+Laboratory" alt="Nouveau Laboratoire" class="news-card-image">
+                        <div class="news-card-content">
+                            <span class="news-date">5 Janvier 2024</span>
+                            <h3 class="news-title">Nouveau Laboratoire</h3>
+                            <p class="news-description">Inauguration de notre nouveau laboratoire de sciences.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    <!-- Small Contact Form -->
+        <section class="small-contact-section" style="background: #f0f4f8;">
+        <div class="container">
+            <div class="small-contact-container" style="background: #fffbe6; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); padding: 2rem 1.5rem;">
+                <h2 class="fade-in-up" style="color: #1b4332;">Une Question ?</h2>
+                <p class="fade-in-up" style="animation-delay: 0.1s; color: #222;">Envoyez-nous un message rapide et nous vous répondrons dans les plus brefs délais</p>
+                <form class="small-contact-form fade-in-up" style="animation-delay: 0.2s;" id="smallContactForm">
+                    <div class="small-form-grid">
+                        <input type="email" name="email" placeholder="Votre adresse email" required>
+                        <input type="text" name="subject" placeholder="Sujet de votre message" required>
+                    </div>
+                    <textarea name="message" placeholder="Votre message..." required rows="4"></textarea>
+                    <button type="submit" style="background: #ffe066; color: #1b4332;">Envoyer le Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="/images/logo.jpg" alt="Etablissement Acharaf Logo">
+                        </div>
+                        <h3>ETABLISSEMENT ACHARAF</h3>
+                    </div>
+                    <p>Excellence éducative et innovation pédagogique</p>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <p>Quartier Acharaf, Rue Ihsan Abdelkouddous<br>Marrakesh, Morocco</p>
+                    <p>Tél: +212 5242-91168</p>
+                    <p>Email: acharafinstitut@gmail.com</p>
+                </div>
+
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Niveaux</h4>
+                    <ul>
+                        <li><a href="maternelle.html">Maternelle</a></li>
+                        <li><a href="primaire.html">Primaire</a></li>
+                        <li><a href="secondaire.html">Secondaire</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Etablissement Acharaf. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
