@@ -204,7 +204,13 @@ html {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-  color: #2563eb;
+  color: #FFD400;
+  text-shadow: 0 1px 8px rgba(255, 212, 0, 0.10);
+}
+
+.nav-menu a:hover{
+  color : #FFD400;
+  text-shadow: 0 1px 8px rgba(255, 212, 0, 0.10);
 }
 
 /* Dropdown */
@@ -224,13 +230,16 @@ html {
 }
 
 .dropdown-toggle.active {
-  color: #2563eb;
+  color: #FFD400;
+  text-shadow: 0 1px 8px rgba(255, 212, 0, 0.10);
 }
 
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
+  right: auto;
+  z-index: 1001;
   background: white;
   border-radius: 8px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -259,8 +268,42 @@ html {
 
 .dropdown-menu a:hover,
 .dropdown-menu a.active {
-  background: #f3f4f6;
-  color: #2563eb;
+  background: #fffbe6;
+  color: #FFD400;
+  text-shadow: 0 1px 8px rgba(255, 212, 0, 0.10);
+}
+
+.dropdown-menu a:hover{
+  background: #fffbe6;
+  color: #FFD400;
+  text-shadow: 0 1px 8px rgba(255, 212, 0, 0.10);
+}
+/* Scroll to Top Button (Yellow Aesthetic) */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #FFD400;
+  color: #222;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(255, 212, 0, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background: #ffe066;
+  color: #000;
+  box-shadow: 0 8px 24px rgba(255, 212, 0, 0.22);
+  transform: translateY(-2px) scale(1.08);
 }
 
 /* Mobile Menu */

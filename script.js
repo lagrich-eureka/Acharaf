@@ -371,24 +371,24 @@ function createScrollToTopButton() {
   btn.className = "scroll-to-top"
 
   btn.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: #2563eb;
-        color: white;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(20px);
-        transition: all 0.3s ease;
-        z-index: 1000;
-    `
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFD400;
+    color: #222;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(255, 212, 0, 0.18);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  `
 
   btn.addEventListener("click", () => {
     window.scrollTo({
@@ -411,12 +411,16 @@ function createScrollToTopButton() {
   })
 
   btn.addEventListener("mouseenter", () => {
-    btn.style.background = "#1d4ed8"
-    btn.style.transform = "translateY(-2px)"
+    btn.style.background = "#ffe066"
+    btn.style.color = "#000"
+    btn.style.boxShadow = "0 8px 24px rgba(255, 212, 0, 0.22)"
+    btn.style.transform = "translateY(-2px) scale(1.08)"
   })
 
   btn.addEventListener("mouseleave", () => {
-    btn.style.background = "#2563eb"
+    btn.style.background = "#FFD400"
+    btn.style.color = "#222"
+    btn.style.boxShadow = "0 4px 16px rgba(255, 212, 0, 0.18)"
     btn.style.transform = "translateY(0)"
   })
 
