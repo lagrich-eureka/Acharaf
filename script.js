@@ -1,7 +1,6 @@
 // DOM Content Loaded
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize animations
-  initializeAnimations()
+  // Animations now handled by CSS only for performance
 
   // Initialize hero carousel
   initializeHeroCarousel()
@@ -26,30 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 // Animation Observer
-function initializeAnimations() {
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px",
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.animationPlayState = "running"
-      }
-    })
-  }, observerOptions)
-
-  // Observe all animated elements
-  const animatedElements = document.querySelectorAll(
-    ".fade-in, .fade-in-up, .slide-in-left, .slide-in-right, .slide-in-up, .scale-in",
-  )
-
-  animatedElements.forEach((el) => {
-    el.style.animationPlayState = "paused"
-    observer.observe(el)
-  })
-}
+// Removed IntersectionObserver animation handler for performance
 
 // Hero Carousel
 function initializeHeroCarousel() {
@@ -279,45 +255,16 @@ function initializeContactForm() {
 
 // Scroll Effects
 function initializeScrollEffects() {
-  const header = document.querySelector(".header")
-  let lastScrollTop = 0
-
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-
-    // Add scrolled class to header
-    if (scrollTop > 50) {
-      header.classList.add("scrolled")
-    } else {
-      header.classList.remove("scrolled")
-    }
-
-    // Hide/show header on scroll
-    if (scrollTop > lastScrollTop && scrollTop > 100) {
-      header.style.transform = "translateY(-100%)"
-    } else {
-      header.style.transform = "translateY(0)"
-    }
-
-    lastScrollTop = scrollTop
-  })
-
-  // Smooth scroll for anchor links
-  const anchorLinks = document.querySelectorAll('a[href^="#"]')
-  anchorLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault()
-      const targetId = link.getAttribute("href").substring(1)
-      const targetElement = document.getElementById(targetId)
-
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        })
-      }
-    })
-  })
+  // const header = document.querySelector(".header")
+  // window.addEventListener("scroll", () => {
+  //   const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+  //   if (scrollTop > 50) {
+  //     header.classList.add("scrolled")
+  //   } else {
+  //     header.classList.remove("scrolled")
+  //   }
+  // })
+  // Removed smooth scroll and header hide/show for performance
 }
 
 // Utility Functions
@@ -460,7 +407,7 @@ function initializeSmallContactForm() {
 
       try {
         // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 2000))
+        await new Promise((resolve) => setTimeout(resolve, 200))
 
         // Success
         button.innerHTML = "✓ Message envoyé!"

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etablissement Acharaf - Collège</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <img src="./imgs/Logo.jpg" alt="Etablissement Acharaf Logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>Etablissement Acharaf </h1>
+                        
+                    </div>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li class="dropdown">
+                            <span class="dropdown-toggle active">
+                                Niveaux
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                            <div class="dropdown-menu">
+                                <a href="maternelle.html">🧸 Maternelle</a>
+                                <a href="primaire.html">🌱 Primaire</a>
+                                <a href="college.html" class="active">🎓 Collège</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-menu">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <div class="mobile-submenu">
+                    <p style="color: #6b7280; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">Niveaux:</p>
+                    <a href="maternelle.html">🧸 Maternelle</a>
+                    <a href="primaire.html">🌱 Primaire</a>
+                    <a href="college.html">🎓 Collège</a>
+                </div>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="page-header college">
+            <div class="container">
+                <div class="level-hero-content">
+                    <div class="slide-in-left">
+                        <div class="level-hero-text">
+                            <span class="level-hero-icon">🎓</span>
+                            <div>
+                                <h1>Le Collège Acharaf</h1>
+                                <p class="level-subtitle">Excellence académique et ouverture sur le monde</p>
+                            </div>
+                        </div>
+                        <p>Le collège constitue une étape charnière dans la vie scolaire. Les élèves y consolident leurs acquis et se préparent aux cycles supérieurs. À l'Établissement Acharaf, nous veillons à ce que nos collégiens développent à la fois rigueur, autonomie et ouverture intellectuelle.</p>
+                        <div class="level-icons">
+                            <span>📚</span>
+                            <span>🔬</span>
+                            <span>🌍</span>
+                            <span>💡</span>
+                        </div>
+                    </div>
+
+                    <div class="level-hero-image slide-in-right">
+                        <img src="/placeholder.svg?height=400&width=500&text=College+Students" alt="Élèves du collège">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="section">
+            <div class="container">
+                <div class="content-grid">
+                    
+
+                    <div class="content-image slide-in-right">
+                        <img src="/placeholder.svg?height=400&width=500&text=College+Classroom" alt="Salle de classe du collège">
+                    </div>
+                    <div class="content-text slide-in-left">
+                        <h2>Nos Engagements</h2>
+                        <ul class="objectives-list">
+                            <li>
+                                <span style="color: #2d5016; font-size: 1.25rem;">📚</span>
+                                <span>Un enseignement structuré couvrant toutes les disciplines fondamentales : langues, mathématiques, sciences, histoire-géographie, technologie et arts.</span>
+                            </li>
+                            <li>
+                                <span style="color: #2d5016; font-size: 1.25rem;">🤔</span>
+                                <span>Une pédagogie qui favorise l'esprit critique et l'analyse.</span>
+                            </li>
+                            <li>
+                                <span style="color: #2d5016; font-size: 1.25rem;">👥</span>
+                                <span>Un accompagnement personnalisé pour garantir la réussite de chaque élève.</span>
+                            </li>
+                        </ul>
+
+                        <div class="story-intro fade-in-up" style="margin-top: 2rem;">
+                            <p><strong>Le Collège Acharaf, pour former des jeunes autonomes, cultivés et prêts à réussir.</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Activités Complémentaires</h2>
+
+                <div class="curriculum-grid">
+                    <div class="curriculum-item slide-in-up">
+                        <div class="curriculum-icon">🌍</div>
+                        <h3>Langues Vivantes</h3>
+                        <p>Cours de langues vivantes pour renforcer l'ouverture culturelle</p>
+                    </div>
+                    <div class="curriculum-item slide-in-up" style="animation-delay: 0.1s;">
+                        <div class="curriculum-icon">🏃</div>
+                        <h3>Sport & Arts</h3>
+                        <p>Activités sportives et artistiques pour développer les talents</p>
+                    </div>
+                    <div class="curriculum-item slide-in-up" style="animation-delay: 0.2s;">
+                        <div class="curriculum-icon">🏆</div>
+                        <h3>Projets Éducatifs</h3>
+                        <p>Participation à des projets éducatifs et concours académiques</p>
+                    </div>
+                </div>
+
+                <div class="stat-card fade-in-up" style="margin-top: 3rem;">
+                    <div class="stat-icon">�‍🏫</div>
+                    <p class="stat-label">Nos enseignants encouragent les élèves à donner le meilleur d'eux-mêmes, en cultivant le goût de l'effort et la responsabilité individuelle.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Projets et Activités</h2>
+
+                <div class="grid grid-3">
+                    <div class="card slide-in-up">
+                        <img src="/placeholder.svg?height=200&width=300&text=Science+Club" alt="Club Scientifique" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Club Scientifique</h3>
+                            <p class="card-description">Expériences, recherches et participation aux concours scientifiques</p>
+                        </div>
+                    </div>
+
+                    <div class="card slide-in-up" style="animation-delay: 0.2s;">
+                        <img src="/placeholder.svg?height=200&width=300&text=Tech+Projects" alt="Projets Tech" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Projets Tech</h3>
+                            <p class="card-description">Développement d'applications et projets de robotique</p>
+                        </div>
+                    </div>
+
+                    <div class="card slide-in-up" style="animation-delay: 0.4s;">
+                        <img src="/placeholder.svg?height=200&width=300&text=Cultural+Exchange" alt="Échanges Culturels" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Échanges Culturels</h3>
+                            <p class="card-description">Ouverture sur le monde et découverte d'autres cultures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Nos Réussites</h2>
+
+                <div class="grid grid-3">
+                    <div class="stat-card scale-in">
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-number">92%</div>
+                        <div class="stat-label">Taux de Réussite</div>
+                    </div>
+                    <div class="stat-card scale-in" style="animation-delay: 0.1s;">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Mentions Bien et Très Bien</div>
+                    </div>
+                    <div class="stat-card scale-in" style="animation-delay: 0.2s;">
+                        <div class="stat-icon">🚀</div>
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Orientation Réussie</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preparation Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Préparation à l'Avenir</h2>
+
+                <div class="grid grid-3">
+                    <div class="card slide-in-up">
+                        <img src="/placeholder.svg?height=200&width=300&text=Career+Guidance" alt="Orientation Personnalisée" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Orientation Personnalisée</h3>
+                            <p class="card-description">Accompagnement individuel pour choisir la meilleure voie d'études supérieures</p>
+                        </div>
+                    </div>
+
+                    <div class="card slide-in-up" style="animation-delay: 0.2s;">
+                        <img src="/placeholder.svg?height=200&width=300&text=Study+Skills" alt="Méthodes d'Étude" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Méthodes d'Étude</h3>
+                            <p class="card-description">Développement de techniques d'apprentissage efficaces</p>
+                        </div>
+                    </div>
+
+                    <div class="card slide-in-up" style="animation-delay: 0.4s;">
+                        <img src="/placeholder.svg?height=200&width=300&text=21st+Century+Skills" alt="Compétences du 21ème Siècle" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Compétences du 21ème Siècle</h3>
+                            <p class="card-description">Leadership, communication, pensée critique et collaboration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Small Contact Form -->
+        <section class="small-contact-section" style="background: #ffffff;">
+            <div class="container" >
+                <!-- Contact Form -->
+                    <div class="slide-in-right">
+                        <div class="contact-form-container">
+                            <h2>Envoyez-nous un Message</h2>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="prenom">Prénom *</label>
+                                        <input type="text" id="prenom" name="prenom" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nom">Nom *</label>
+                                        <input type="text" id="nom" name="nom" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telephone">Téléphone *</label>
+                                        <input type="tel" id="telephone" name="telephone">
+                                    </div>
+                                </div>
+
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="typeContact">Type de Demande *</label>
+                                        <select id="typeContact" name="typeContact" required>
+                                            <option value="">Sélectionnez...</option>
+                                            <option value="admission">Demande d'Admission</option>
+                                            <option value="information">Demande d'Information</option>
+                                            <option value="visite">Planifier une Visite</option>
+                                            <option value="pedagogie">Questions Pédagogiques</option>
+                                            <option value="administration">Questions Administratives</option>
+                                            <option value="autre">Autre</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group" style="display: none;">
+                                        <input type="hidden" id="niveau" name="niveau" value="college">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sujet">Sujet *</label>
+                                    <input type="text" id="sujet" name="sujet" placeholder="Résumez brièvement votre demande" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" placeholder="Décrivez votre demande en détail..." required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                        <input type="checkbox" id="newsletter" name="newsletter" style="margin: 0;">
+                                        <span style="font-size: 0.875rem;">Je souhaite recevoir la newsletter de l'établissement</span>
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary-2" id="submitBtn">
+                                    Envoyer le Message
+                                </button>
+
+                                <p style="font-size: 0.75rem; color: #6b7280; margin-top: 1rem;">
+                                    * Champs obligatoires. Vos données personnelles sont protégées et ne seront utilisées que pour répondre à votre demande.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="./imgs/Logo.jpg" alt="Etablissement Acharaf Logo">
+                        </div>
+                        <h3>ETABLISSEMENT ACHARAF</h3>
+                    </div>
+                    <p>Excellence éducative et innovation pédagogique</p>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <p>Quartier Acharaf, Rue Ihsan Abdelkouddous<br>Marrakesh, Morocco</p>
+                    <p>Tél: +212 5242-91168</p>
+                    <p>Email: acharafinstitut@gmail.com</p>
+                </div>
+
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Niveaux</h4>
+                    <ul>
+                        <li><a href="maternelle.html">Maternelle</a></li>
+                        <li><a href="primaire.html">Primaire</a></li>
+                        <li><a href="college.html">Collège</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2025 <a href="https://eureka-digital.ma/" class="copyright_link"><strong>Eureka digital</strong></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
