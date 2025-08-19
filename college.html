@@ -66,13 +66,17 @@
 
     <main class="main-content">
         <!-- Hero Section -->
-        <section class="page-header">
-            <div class="container">
-                <h1 class="fade-in">🎓 Le Collège Acharaf</h1>
-                <p class="fade-in" style="animation-delay: 0.2s;">Excellence académique et ouverture sur le monde</p>
+        <section class="page-header page-header--with-image">
+            <div class="page-header-media">
+                <img class="page-header-img" src="./imgs/Breadcrum.png" alt="Maternelle Acharaf">
+                <div class="page-header-overlay">
+                    <div class="container">
+                        <h1 class="fade-in" style="color: white;">🎓 Le Collège Acharaf</h1>
+                        <p class="fade-in" style="animation-delay: 0.2s; color: white;">Excellence académique et ouverture sur le monde</p>
+                    </div>
+                </div>
             </div>
         </section>
-
         <!-- Description Section -->
         <section class="section">
             <div class="container">
@@ -153,7 +157,7 @@
             <div class="container">
                 <h2 class="section-title fade-in-up">Activités Complémentaires</h2>
 
-                <div class="curriculum-grid">
+                <div class="grid grid-3 cards-1-col-mobile">
                     <div class="curriculum-item slide-in-up">
                         <div class="curriculum-icon"><i class="fas fa-graduation-cap"></i></div>
                         <h3>Langues Vivantes</h3>
@@ -174,97 +178,54 @@
                 
             </div>
         </section>
-
-        <!-- Projects Section -->
-        <!-- <section class="section">
-            <div class="container">
-                <h2 class="section-title fade-in-up">Projets et Activités</h2>
-
-                <div class="grid grid-3">
-                    <div class="card slide-in-up">
-                        <img src="/placeholder.svg?height=200&width=300&text=Science+Club" alt="Club Scientifique" class="card-image">
-                        <div class="card-content">
-                            <h3 class="card-title">Club Scientifique</h3>
-                            <p class="card-description">Expériences, recherches et participation aux concours scientifiques</p>
-                        </div>
-                    </div>
-
-                    <div class="card slide-in-up" style="animation-delay: 0.2s;">
-                        <img src="/placeholder.svg?height=200&width=300&text=Tech+Projects" alt="Projets Tech" class="card-image">
-                        <div class="card-content">
-                            <h3 class="card-title">Projets Tech</h3>
-                            <p class="card-description">Développement d'applications et projets de robotique</p>
-                        </div>
-                    </div>
-
-                    <div class="card slide-in-up" style="animation-delay: 0.4s;">
-                        <img src="/placeholder.svg?height=200&width=300&text=Cultural+Exchange" alt="Échanges Culturels" class="card-image">
-                        <div class="card-content">
-                            <h3 class="card-title">Échanges Culturels</h3>
-                            <p class="card-description">Ouverture sur le monde et découverte d'autres cultures</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Achievements Section -->
-        <section class="section section">
-            <div class="container">
-                <h2 class="section-title fade-in-up">Nos Réussites</h2>
-
-                <div class="grid grid-3">
-                    <div class="stat-card scale-in">
-                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div class="stat-number">92%</div>
-                        <div class="stat-label">Taux de Réussite</div>
-                    </div>
-                    <div class="stat-card scale-in" style="animation-delay: 0.1s;">
-                        <div class="stat-icon"><i class="fas fa-star"></i></div>
-                        <div class="stat-number">85%</div>
-                        <div class="stat-label">Mentions Bien et Très Bien</div>
-                    </div>
-                    <div class="stat-card scale-in" style="animation-delay: 0.2s;">
-                        <div class="stat-icon"><i class="fas fa-rocket"></i></div>
-                        <div class="stat-number">95%</div>
-                        <div class="stat-label">Orientation Réussie</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Preparation Section -->
         <section class="section section-gray">
             <div class="container">
-                <h2 class="section-title fade-in-up">Préparation à l'Avenir</h2>
-
-                <div class="grid grid-3">
-                    <div class="card slide-in-up">
-                        <img src="./imgs/college/middleSchool 1.jpg" alt="Orientation Personnalisée" class="card-image" loading="lazy">
-                        <div class="card-content">
-                            <h3 class="card-title">Orientation Personnalisée</h3>
-                            <p class="card-description">Accompagnement individuel pour choisir la meilleure voie d'études supérieures</p>
+                <h2 class="section-title fade-in-up">Galerie</h2>
+                <div class="masonry-gallery">
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/college1.jpg" alt="Bibliothèque Moderne">
                         </div>
                     </div>
-
-                    <div class="card slide-in-up" style="animation-delay: 0.2s;">
-                        <img src="./imgs/college/middleSchool 4.jpg" alt="Méthodes d'Étude" class="card-image" loading="lazy">
-                        <div class="card-content">
-                            <h3 class="card-title">Méthodes d'Étude</h3>
-                            <p class="card-description">Développement de techniques d'apprentissage efficaces</p>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/college2.jpg" alt="Activités au collège">
                         </div>
                     </div>
-
-                    <div class="card slide-in-up" style="animation-delay: 0.4s;">
-                        <img src="./imgs/college/middleSchool 2.jpg" alt="Compétences du 21ème Siècle" class="card-image" loading="lazy">
-                        <div class="card-content">
-                            <h3 class="card-title">Compétences du 21ème Siècle</h3>
-                            <p class="card-description">Leadership, communication, pensée critique et collaboration</p>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/college/middleSchool 2.jpg" alt="Activités au collège">
                         </div>
                     </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/college/middleSchool 3.jpg" alt="Activités au collège">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/college/middleSchool 4.jpg" alt="Activités au collège">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/middleSchool 1.jpg" alt="Activités au collège">
+                        </div>
+                    </div>
+                    
+                    
+                    
                 </div>
             </div>
         </section>
+        <div id="lightbox" class="lightbox">
+            <button class="lightbox-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="lightbox-img" class="lightbox-img" src="" alt="Image en plein écran">
+        </div>
+
+       
 
     <!-- Small Contact Form -->
         <section class="small-contact-section" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);">

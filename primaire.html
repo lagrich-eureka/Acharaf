@@ -66,10 +66,15 @@
 
     <main class="main-content">
         <!-- Hero Section -->
-        <section class="page-header">
-            <div class="container">
-                <h1 class="fade-in">✏️ Le Primaire Acharaf</h1>
-                <p class="fade-in" style="animation-delay: 0.2s;">Construire les fondations du savoir et des valeurs</p>
+        <section class="page-header page-header--with-image">
+            <div class="page-header-media">
+                <img class="page-header-img" src="./imgs/Breadcrum.png" alt="Maternelle Acharaf">
+                <div class="page-header-overlay">
+                    <div class="container">
+                        <h1 class="fade-in" style="color: white;">✏️ Le Primaire Acharaf</h1>
+                        <p class="fade-in" style="animation-delay: 0.2s; color: white;">Construire les fondations du savoir et des valeurs</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -157,7 +162,7 @@
             <div class="container">
                 <h2 class="section-title fade-in-up">Notre Approche Éducative</h2>
 
-                <div class="curriculum-grid">
+                <div class="grid grid-3 cards-1-col-mobile">
                     <div class="curriculum-item slide-in-up">
                         <div class="curriculum-icon"><i class="fas fa-graduation-cap"></i></div>
                         <h3>Cours Interactifs</h3>
@@ -173,47 +178,57 @@
                         <h3>Suivi Personnalisé</h3>
                         <p>Accompagnement individualisé selon le rythme de chaque élève</p>
                     </div>
-                    <div class="curriculum-item slide-in-up" style="animation-delay: 0.3s;">
-                        <div class="curriculum-icon"><i class="fas fa-futbol"></i></div>
-                        <h3>Activités Équilibrées</h3>
-                        <p>Sports et culture intégrés au programme pour un développement complet</p>
-                    </div>
+                    
                 </div>
             </div>
         </section>
-
-        <!-- Activities Section -->
-        <section class="section">
+        <section class="section section-gray">
             <div class="container">
-                <h2 class="section-title fade-in-up">Les Atouts de l'École Primaire Acharaf</h2>
-
-                <div class="grid grid-3">
-                    <div class="card slide-in-up">
-                        <div class="card-content">
-                            <div class="curriculum-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                            <h3 class="card-title">Enseignants Investis</h3>
-                            <p class="card-description">Une équipe pédagogique dévouée et disponible pour chaque élève</p>
+                <h2 class="section-title fade-in-up">Galerie</h2>
+                <div class="masonry-gallery">
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire2.jpg" alt="Bibliothèque Moderne">
                         </div>
                     </div>
-
-                    <div class="card slide-in-up" style="animation-delay: 0.2s;">
-                        <div class="card-content">
-                            <div class="curriculum-icon"><i class="fas fa-bullseye"></i></div>
-                            <h3 class="card-title">Classes Optimisées</h3>
-                            <p class="card-description">Un environnement qui favorise l'écoute et la participation active</p>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire8.jpg" alt="Bibliothèque Moderne">
                         </div>
                     </div>
-
-                    <div class="card slide-in-up" style="animation-delay: 0.4s;">
-                        <div class="card-content">
-                            <div class="curriculum-icon"><i class="fas fa-chart-line"></i></div>
-                            <h3 class="card-title">Progression Continue</h3>
-                            <p class="card-description">Une évolution harmonieuse de la 1ʳᵉ à la 6ᵉ année primaire</p>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire9.jpg" alt="Bibliothèque Moderne">
                         </div>
                     </div>
+                    
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire12.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire14.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire15.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>                   
+                    
                 </div>
             </div>
         </section>
+        <div id="lightbox" class="lightbox">
+            <button class="lightbox-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="lightbox-img" class="lightbox-img" src="" alt="Image en plein écran">
+        </div>
+
+       
 
     <!-- Small Contact Form -->
        <section class="small-contact-section" style="background: #ffffff;">

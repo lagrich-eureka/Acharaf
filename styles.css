@@ -447,8 +447,9 @@ main {
 .hero-buttons {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .btn {
@@ -562,45 +563,66 @@ main {
 }
 
 .grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
 }
 
-/* Base styles for stat card grid to ensure it never goes to 1 column */
-.grid-3:has(.stat-card) {
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+/* Force cards to maintain specific layouts */
+.grid-3:has(.card),
+.grid-3:has(.stat-card),
+.grid-3:has(.curriculum-item) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-/* Make stat cards always 2 per row on all mobile sizes (note: :has support varies; grid fallback classes may be needed on very old browsers) */
-@media screen and (max-width: 700px) {
-  /* Force stat cards to always be 2 per row */
+/* Ensure stats are 4 columns on desktop */
+.grid-4:has(.stat-card) {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 928px) {
+  .grid-3:has(.card),
+  .grid-3:has(.stat-card),
+  .grid-4:has(.stat-card),
+  .grid-4:has(.card) {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-3:has(.card),
   .grid-3:has(.stat-card) {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1rem !important;
-    min-width: 0; /* Prevent overflow issues */
   }
-  /* Ensure stat cards inside grid-4 stay 2 per row on small screens */
-  .grid-4:has(.stat-card) {
-    grid-template-columns: repeat(2, 1fr) !important;
+  /* On mobile, make curriculum/program grids single column */
+  .grid-3:has(.curriculum-item),
+  .grid-3:has(.program-card),
+  .cards-1-col-mobile {
+    grid-template-columns: 1fr !important;
     gap: 1rem !important;
-    min-width: 0;
   }
-  
-  /* Other grid-3 elements (including program cards) go to 1 column */
-  .grid-3:not(:has(.stat-card)) {
+}
+
+/* Utility: force single column on small screens regardless of content */
+@media screen and (max-width: 928px) {
+  .cards-1-col-mobile {
     grid-template-columns: 1fr !important;
   }
 }
+
 
 .grid-4 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 /* Cards with Enhanced Hover Animation */
-.card {
+.card,
+.curriculum-item {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
   transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -620,6 +642,7 @@ main {
 
 .card-content {
   padding: 1.5rem;
+  text-align: center;
 }
 
 .card-title {
@@ -732,8 +755,10 @@ main {
     font-size: 0.9rem;
   }
   
-  .grid-3 {
-    grid-template-columns: repeat(2, 1fr);
+  .grid-3:has(.card),
+  .grid-3:has(.stat-card) {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
   }
 }
 
@@ -831,13 +856,16 @@ main {
 
 /* Gallery Items */
 .masonry-gallery {
-  columns: 3;
-  column-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: start;
 }
 
 .gallery-item-wrapper {
-  margin-bottom: 1.5rem;
-  break-inside: avoid;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 0;
 }
 
 .gallery-item {
@@ -846,15 +874,16 @@ main {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
 }
 
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
   transition: transform 0.5s ease, box-shadow 0.25s ease;
-  border-radius: 12px; /* keep thumbnails rounded even if container overflow becomes visible */
+  border-radius: 12px;
 }
 
 .gallery-item {
@@ -926,13 +955,13 @@ main {
 
 @media (max-width: 1024px) {
   .masonry-gallery {
-    columns: 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 640px) {
   .masonry-gallery {
-    columns: 1;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -984,6 +1013,44 @@ main {
   background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
   padding: 4rem 0;
   text-align: center;
+}
+
+/* Slim variant for headers that use a short background image (e.g., breadcrumb) */
+.page-header--slim {
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .page-header--slim {
+    padding: 1.25rem 0;
+  }
+}
+
+/* Image-backed header variant */
+.page-header--with-image {
+  background: none;
+  padding: 0;
+}
+
+.page-header-media {
+  position: relative;
+}
+
+.page-header-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.page-header-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
 }
 
 .page-header.primaire {
@@ -1138,11 +1205,7 @@ main {
 }
 
 /* Curriculum Grid */
-.curriculum-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
+/* Removed old curriculum-grid styles as we're using grid-3 now */
 
 .curriculum-item {
   background: white;
@@ -1969,7 +2032,6 @@ main {
     flex-direction: column;
   }
 
-  .curriculum-grid,
   .values-grid,
   .leadership-grid {
     grid-template-columns: 1fr;
