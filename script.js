@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize contact form
   initializeContactForm()
 
-  // Initialize small contact form
+  // Initialize small contact form (only if present)
   initializeSmallContactForm()
 
   // Initialize scroll effects
@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize scroll to top button
   createScrollToTopButton()
+
+  // Initialize lightbox
+  initializeLightbox()
+  
+  // Initialize accordions
+  initializeAccordions()
 })
 
 // Animation Observer
@@ -372,6 +378,151 @@ function createScrollToTopButton() {
   })
 
   document.body.appendChild(btn)
+}
+
+// Lightbox functionality
+function initializeLightbox() {
+  const lightbox = document.querySelector('.lightbox');
+  const lightboxImg = document.querySelector('.lightbox-img');
+  const lightboxClose = document.querySelector('.lightbox-close');
+  const lightboxPrev = document.querySelector('.lightbox-prev');
+  const lightboxNext = document.querySelector('.lightbox-next');
+  const galleryItems = document.querySelectorAll('.gallery-item img');
+  let currentImageIndex = 0;
+
+  if (!lightbox || !lightboxImg || galleryItems.length === 0) return;
+
+  // Function to open lightbox
+  function openLightbox(index) {
+    currentImageIndex = index;
+    lightboxImg.src = galleryItems[index].src;
+    // Use the CSS class to trigger transitions and make the image scale to full size
+    lightbox.classList.add('active');
+    // small timeout to allow the class change to take effect for smoother animation
+    setTimeout(() => {
+      lightbox.style.opacity = '1';
+    }, 10);
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Function to close lightbox
+  function closeLightbox() {
+    // Remove the active class so CSS transitions handle fade-out and image shrink
+    lightbox.style.opacity = '0';
+    lightbox.classList.remove('active');
+    setTimeout(() => {
+      document.body.style.overflow = '';
+    }, 300);
+  }
+
+  // Function to navigate to previous image
+  function showPrevImage() {
+    currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
+    lightboxImg.style.opacity = '0';
+    setTimeout(() => {
+      lightboxImg.src = galleryItems[currentImageIndex].src;
+      lightboxImg.style.opacity = '1';
+    }, 200);
+  }
+
+  // Function to navigate to next image
+  function showNextImage() {
+    currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
+    lightboxImg.style.opacity = '0';
+    setTimeout(() => {
+      lightboxImg.src = galleryItems[currentImageIndex].src;
+      lightboxImg.style.opacity = '1';
+    }, 200);
+  }
+
+  // Add click event listeners to gallery items
+  galleryItems.forEach((item, index) => {
+    item.addEventListener('click', () => openLightbox(index));
+  });
+
+  // Add click event listener to close button
+  if (lightboxClose) {
+    lightboxClose.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeLightbox();
+    });
+  }
+
+  // Add click event listeners to navigation buttons
+  if (lightboxPrev) {
+    lightboxPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showPrevImage();
+    });
+  }
+
+  if (lightboxNext) {
+    lightboxNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showNextImage();
+    });
+  }
+
+  // Close lightbox when clicking outside the image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.classList.contains('active')) {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      } else if (e.key === 'ArrowLeft') {
+        showPrevImage();
+      } else if (e.key === 'ArrowRight') {
+        showNextImage();
+      }
+    }
+  });
+}
+
+// Initialize Accordions
+function initializeAccordions() {
+  const accordions = document.querySelectorAll('.accordion-item');
+
+  accordions.forEach(accordion => {
+    const header = accordion.querySelector('.accordion-header');
+    const content = accordion.querySelector('.accordion-content');
+
+    header.addEventListener('click', () => {
+      // Check if this accordion is already active
+      const isActive = accordion.classList.contains('active');
+
+      // First close all accordions
+      accordions.forEach(item => {
+        item.classList.remove('active');
+        const itemContent = item.querySelector('.accordion-content');
+        itemContent.style.maxHeight = null;
+      });
+
+      // Then open this one if it wasn't active
+      if (!isActive) {
+        accordion.classList.add('active');
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+
+      // Toggle the icon
+      const icon = header.querySelector('i');
+      accordions.forEach(item => {
+        const itemIcon = item.querySelector('.accordion-header i');
+        if (item.classList.contains('active')) {
+          itemIcon.classList.remove('fa-chevron-down');
+          itemIcon.classList.add('fa-chevron-up');
+        } else {
+          itemIcon.classList.remove('fa-chevron-up');
+          itemIcon.classList.add('fa-chevron-down');
+        }
+      });
+    });
+  });
 }
 
 // Small Contact Form Handler

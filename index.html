@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -37,9 +38,9 @@
                                 </svg>
                             </span>
                             <div class="dropdown-menu">
-                                <a href="maternelle.html">🧸 Maternelle</a>
-                                <a href="primaire.html">🌱 Primaire</a>
-                                <a href="college.html" >🎓 Collège</a>
+                                <a href="maternelle.html"><i class="fas fa-baby"></i> Maternelle</a>
+                                <a href="primaire.html"><i class="fas fa-child"></i> Primaire</a>
+                                <a href="college.html"><i class="fas fa-user-graduate"></i> Collège</a>
                             </div>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
@@ -57,11 +58,10 @@
                 <a href="index.html">Accueil</a>
                 <a href="about.html">À propos</a>
                 <div class="mobile-submenu">
-                    <p style="color: #6b7280; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">Niveaux:
-                    </p>
-                    <a href="maternelle.html">🧸 Maternelle</a>
-                    <a href="primaire.html">🌱 Primaire</a>
-                    <a href="college.html">🎓 collège</a>
+                    <p style="color: #6b7280; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">Niveaux:</p>
+                    <a href="maternelle.html"><i class="fas fa-child"></i> Maternelle</a>
+                    <a href="primaire.html"><i class="fas fa-seedling"></i> Primaire</a>
+                    <a href="college.html"><i class="fas fa-user-graduate"></i> Collège</a>
                 </div>
                 <a href="contact.html">Contact</a>
             </div>
@@ -70,10 +70,10 @@
 
     <main class="main-content">
         <!-- Hero Section -->
-        <section class="hero">
-            <img src="./imgs/college/middleSchool 2.jpg" alt="Hero image 1" class="hero-image active">
-            <img src="./imgs/primaire/primaire 3.jpg" alt="Hero image 2" class="hero-image">
-            <img src="./imgs/primaire/primaire 5.jpg" alt="Hero image 3" class="hero-image">
+        <section class="hero" style="height: calc(100vh - var(--header-height, 80px));">
+            <img src="./imgs/Outside.jpg" alt="Façade de l'établissement" class="hero-image active">
+            <img src="./imgs/primaire/primaire 3.jpg" alt="Élèves en classe au primaire" class="hero-image" loading="lazy">
+            <img src="./imgs/Primaire-2/primaire2.jpg" alt="Vie scolaire au primaire" class="hero-image" loading="lazy">
 
             <div class="hero-overlay"></div>
 
@@ -84,8 +84,8 @@
                         <p>Une éducation d'excellence qui prépare nos élèves à façonner l'avenir avec confiance et
                             créativité</p>
                         <div class="hero-buttons">
-                            <button class="btn btn-primary-2">Contacter nous</button>
-                            <button class="btn btn-secondary">Savoir Plus</button>
+                            <a href="#contact-form" class="btn btn-primary-2">Contacter nous</a>
+                            <a href="#community-section" class="btn btn-secondary">Savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -99,24 +99,24 @@
         </section>
 
         <!-- Community Section -->
-        <section class="section section-gray" >
+        <section id="community-section" class="section section-gray" >
             <div class="container">
-                <h2 class="section-title fade-in-up">Une Communauté Où Les Élèves Façonnent Leur Parcours</h2>
                 <div class="grid grid-2" style="align-items: center;">
                     <!-- Left: Image only -->
                     <div class="slide-in-left" style="display: flex; justify-content: center; align-items: center;">
-                        <div style="position: relative; height: 250px; width: 100%; max-width: 420px; border-radius: 12px; overflow: hidden;">
-                            <img src="./imgs/primaire/primaire 1.jpg" alt="Lecture en classe" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        <div style="position: relative; height: 369px; width: 100%; max-width: 620px; border-radius: 12px; overflow: hidden;">
+                            <img src="./imgs/primaire/primaire 1.jpg" alt="Lecture en classe" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
                         </div>
                     </div>
                     <!-- Right: Paragraph + 3 buttons horizontally -->
                     <div class="slide-in-right" style="display: flex; flex-direction: column; gap: 2rem;">
+                        <h2 class="section-title-2 fade-in-up">Une Communauté Où Les Élèves Façonnent Leur Parcours</h2>
                         <p style="font-size: 1.125rem; line-height: 1.7; color: #374151; ">
                             Etablissement Acharaf est un établissement d'excellence, indépendant et innovant, situé à Marrakesh. Notre approche pédagogique unique combine tradition marocaine et méthodes modernes pour préparer nos élèves de la maternelle au collège à devenir des citoyens responsables et créatifs.
                         </p>
                         <div style="display: flex; gap: 1.2rem; flex-wrap: wrap; justify-content: flex-start;">
-                            <a href="about.html" class="btn btn-primary-2">Savoir Plus</a>
-                            <a href="maternelle.html" class="btn btn-secondary-light">Nos Niveaux</a>
+                            <a href="about.html" class="btn btn-primary-2">Savoir plus</a>
+                            <a href="#programs-section" class="btn btn-secondary-light">Nos Niveaux</a>
                         </div>
                     </div>
                 </div>
@@ -128,22 +128,30 @@
             <div class="container">
                 <div class="grid grid-4">
                     <div class="stat-card scale-in">
-                        <div class="stat-icon">👨‍🎓 👩‍🎓</div>
+                        <div class="stat-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
                         <div class="stat-number">500+</div>
                         <div class="stat-label">Élèves épanouis</div>
                     </div>
                     <div class="stat-card scale-in" style="animation-delay: 0.1s;">
-                        <div class="stat-icon">👩‍🏫 👨‍🏫</div>
+                        <div class="stat-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
                         <div class="stat-number">50+</div>
                         <div class="stat-label">Éducateurs dévoués</div>
                     </div>
                     <div class="stat-card scale-in" style="animation-delay: 0.2s;">
-                        <div class="stat-icon">📚</div>
+                        <div class="stat-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
                         <div class="stat-number">100%</div>
                         <div class="stat-label">Suivi pédagogique personnalisé</div>
                     </div>
                     <div class="stat-card scale-in" style="animation-delay: 0.3s;">
-                        <div class="stat-icon">🏫</div>
+                        <div class="stat-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
                         <div class="stat-number">25</div>
                         <div class="stat-label">Ans de confiance et d’excellence</div>
                     </div>
@@ -152,21 +160,21 @@
         </section>
 
         <!-- Programs Section -->
-        <section class="section section-gray">
+        <section id="programs-section" class="section section-gray">
             <div class="container">
                 <h2 class="section-title fade-in-up" style="color: #1b4332;">Nos Programmes</h2>
                 <div class="grid grid-3">
                     <a href="maternelle.html" class="program-card slide-in-up">
                         <div class="program-card-image">
-                            <img src="./imgs/kidergarten/kindergarten 3.jpg" alt="Maternelle">
+                            <img src="./imgs/Primaire-2/primaire6.jpg" alt="Activités en maternelle" loading="lazy">
                             <div class="program-card-overlay"></div>
                         </div>
                         <div class="program-card-info" style="padding:6%">
                             <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
                                 <h3 style="margin: 0; font-size: 1.5rem;" class="program-card-padded">Maternelle</h3>
-                                <span class="program-card-icon" style="font-size: 2rem;">🧸</span>
+                                
                             </div>
-                            <p style="margin: 0.5rem 0 0.5rem 0;">3 - 5 ans</p>
+                            <p style="margin: 0.5rem 0 0.5rem 0;"> </p>
                             <div class="program-card-body">
                                 <p>Premiers pas dans l'apprentissage avec jeux éducatifs et développement social</p>
                                 <span class="program-card-link">Découvrir →</span>
@@ -176,15 +184,14 @@
 
                     <a href="primaire.html" class="program-card slide-in-up" style="animation-delay: 0.2s;">
                         <div class="program-card-image">
-                            <img src="./imgs/primaire/primaire 1.jpg" alt="Primaire">
+                            <img src="./imgs/Primaire-2/college2.jpg" alt="École primaire - cours" loading="lazy">
                             <div class="program-card-overlay"></div>
                         </div>
                         <div class="program-card-info" style="padding:6%">
                             <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
                                 <h3 style="margin: 0; font-size: 1.5rem; color: #222;">Primaire</h3>
-                                <span class="program-card-icon" style="font-size: 2rem;">🌱</span>
                             </div>
-                            <p style="margin: 0.5rem 0 0.5rem 0;">6 - 11 ans</p>
+                            <p style="margin: 0.5rem 0 0.5rem 0;"></p>
                             <div class="program-card-body">
                                 <p>Fondations solides dans un environnement bienveillant et stimulant</p>
                                 <span class="program-card-link" style="color: #ffe066;">Découvrir →</span>
@@ -193,15 +200,15 @@
                     </a>
                     <a href="college.html" class="program-card slide-in-up" style="animation-delay: 0.4s;">
                         <div class="program-card-image">
-                            <img src="./imgs/college/middleSchool 1.jpg" alt="collège">
+                            <img src="./imgs/Primaire-2/college1.jpg" alt="Collège - activités" loading="lazy">
                             <div class="program-card-overlay"></div>
                         </div>
                         <div class="program-card-info" style="padding:6%">
                             <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
-                                <h3 style="margin: 0; font-size: 1.5rem; color: #222;">collège</h3>
-                                <span class="program-card-icon" style="font-size: 2rem;">🎓</span>
+                                <h3 style="margin: 0; font-size: 1.5rem; color: #222;">Collège</h3>
+                                
                             </div>
-                            <p style="margin: 0.5rem 0 0.5rem 0;">12 - 15 ans</p>
+                            <p style="margin: 0.5rem 0 0.5rem 0;"></p>
                             <div class="program-card-body">
                                 <p>Accompagnement vers l'autonomie et la réussite scolaire </p>
                                 <span class="program-card-link" style="color: #2d5016;">Découvrir →</span>
@@ -213,86 +220,113 @@
         </section>
 
         <!-- Gallery Section -->
-        <section class="section">
+        <section class="section section-gray">
             <div class="container">
-                <h2 class="section-title fade-in-up">Notre Environnement</h2>
-
-                <div class="grid grid-3">
-                    <div class="gallery-item scale-in">
-                        <img src="./imgs/Biblio.jpg" alt="Bibliothèque Moderne">
-                        <div class="gallery-overlay">
-                            <h3>Bibliothèque Moderne</h3>
+                <h2 class="section-title fade-in-up">Galerie</h2>
+                <div class="masonry-gallery">
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire2.jpg" alt="Bibliothèque Moderne">
                         </div>
                     </div>
-                    <div class="gallery-item scale-in" style="animation-delay: 0.1s;">
-                        <img src="./imgs/science lab 1.jpg" alt="Laboratoire de Sciences">
-                        <div class="gallery-overlay">
-                            <h3>Laboratoire de Sciences</h3>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire1.jpg" alt="Bibliothèque Moderne">
                         </div>
                     </div>
-                    <div class="gallery-item scale-in" style="animation-delay: 0.2s;">
-                        <img src="./imgs/Salle dinformatique.jpg" alt="Salle Informatique">
-                        <div class="gallery-overlay">
-                            <h3>Salle Informatique</h3>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire3.jpg" alt="Bibliothèque Moderne">
                         </div>
                     </div>
-                    <div class="gallery-item scale-in" style="animation-delay: 0.3s;">
-                        <img src="./imgs/recreation.jpg" alt="Cour de Récréation">
-                        <div class="gallery-overlay">
-                            <h3>Cour de Récréation</h3>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire4.jpg" alt="Bibliothèque Moderne">
                         </div>
                     </div>
-                    <div class="gallery-item scale-in" style="animation-delay: 0.4s;">
-                        <img src="./imgs/classroom.jpg" alt="Salles de Classe">
-                        <div class="gallery-overlay">
-                            <h3>Salles de Classe</h3>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire5.jpg" alt="Bibliothèque Moderne">
                         </div>
                     </div>
-                    <div class="gallery-item scale-in" style="animation-delay: 0.5s;">
-                        <img src="./imgs/campus.jpg" alt="Campus Principal">
-                        <div class="gallery-overlay">
-                            <h3>Campus Principal</h3>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire6.jpg" alt="Bibliothèque Moderne">
                         </div>
                     </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/college1.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire7.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire8.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire9.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/college2.jpg" alt="Activités au collège">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire10.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire11.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire12.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire14.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire15.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    <div class="gallery-item-wrapper">
+                        <div class="gallery-item scale-in">
+                            <img src="./imgs/Primaire-2/primaire16.jpg" alt="Bibliothèque Moderne">
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </section>
+        
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <button class="lightbox-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="lightbox-img" class="lightbox-img" src="" alt="Image en plein écran">
+        </div>
 
-        <!-- News Section -->
-        <section class="section section-greyer">
-            <div class="container" style="background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); padding: 2rem 1.5rem;">
-                <h2 class="section-title fade-in-up">Actualités</h2>
-                <div class="grid grid-3">
-                    <article class="news-card slide-in-up">
-                        <img src="./imgs/primaire/primaire ateliers 1.jpg" alt="Atelier Lecture" class="news-card-image">
-                        <div class="news-card-content">
-                            <span class="news-date">15 Juin 2025</span>
-                            <h3 class="news-title">Atelier Lecture en Primaire</h3>
-                            <p class="news-description">Nos élèves du primaire ont participé à un atelier de lecture pour encourager l'amour des livres dès le plus jeune âge.</p>
-                        </div>
-                    </article>
-                    <article class="news-card slide-in-up" style="animation-delay: 0.1s;">
-                        <img src="./imgs/primaire/primaire coin lecture.jpg" alt="Coin Lecture" class="news-card-image">
-                        <div class="news-card-content">
-                            <span class="news-date">2 Juin 2025</span>
-                            <h3 class="news-title">Nouveau Coin Lecture</h3>
-                            <p class="news-description">Un nouvel espace lecture a été inauguré pour maternelle et primaire, favorisant la découverte et la détente.</p>
-                        </div>
-                    </article>
-                    <article class="news-card slide-in-up" style="animation-delay: 0.2s;">
-                        <img src="./imgs/college/middleSchool 3.jpg" alt="Sortie pédagogique" class="news-card-image">
-                        <div class="news-card-content">
-                            <span class="news-date">20 Mai 2025</span>
-                            <h3 class="news-title">Sortie pédagogique collège</h3>
-                            <p class="news-description">Les élèves du collège ont visité un site historique pour enrichir leur apprentissage en dehors de la classe.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- Small Contact Form -->
-        <section class="small-contact-section" style="background: #ffffff;">
+        <section id="contact-form" class="small-contact-section" style="background: #ffffffcc;">
             <div class="container" >
                 <!-- Contact Form -->
                     <div class="slide-in-right">
@@ -317,7 +351,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="telephone">Téléphone *</label>
-                                        <input type="tel" id="telephone" name="telephone">
+                                        <input type="tel" id="telephone" name="telephone" required>
                                     </div>
                                 </div>
 
@@ -338,9 +372,9 @@
                                         <label for="niveau">Niveau Concerné</label>
                                         <select id="niveau" name="niveau">
                                             <option value="">Sélectionnez...</option>
-                                            <option value="maternelle">Maternelle (3 - 5 ans)</option>
-                                            <option value="primaire">Primaire (6 - 11 ans)</option>
-                                            <option value="collège">collège (12 - 18 ans)</option>
+                                            <option value="maternelle">Maternelle </option>
+                                            <option value="primaire">Primaire </option>
+                                            <option value="collège">collège </option>
                                             <option value="tous">Tous les niveaux</option>
                                         </select>
                                     </div>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etablissement Acharaf - Lycée</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <img src="./imgs/Logo.jpg" alt="Etablissement Acharaf Logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>Etablissement Acharaf </h1>
+                    </div>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li class="dropdown">
+                            <span class="dropdown-toggle active">
+                                Niveaux
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                            <div class="dropdown-menu">
+                                <a href="maternelle.html"><i class="fas fa-child"></i> Maternelle</a>
+                                <a href="primaire.html"><i class="fas fa-seedling"></i> Primaire</a>
+                                <a href="college.html"><i class="fas fa-user-graduate"></i> Collège</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-menu">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <div class="mobile-submenu">
+                    <p style="color: #6b7280; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">Niveaux:</p>
+                    <a href="maternelle.html"><i class="fas fa-child"></i> Maternelle</a>
+                    <a href="primaire.html"><i class="fas fa-seedling"></i> Primaire</a>
+                    <a href="college.html"><i class="fas fa-user-graduate"></i> Collège</a>
+                </div>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-header lycee">
+            <div class="container">
+                <h1 class="fade-in">🎯 Le Lycée Acharaf</h1>
+                <p class="fade-in" style="animation-delay: 0.2s;">Préparer l'excellence pour l'enseignement supérieur</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-text slide-in-left">
+                        <h2 class="section-title">Ambition et Réussite</h2>
+                        <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">Au lycée Acharaf, nous accompagnons chaque élève vers l'excellence académique et personnelle, en développant autonomie, rigueur et esprit critique.</p>
+                        <div class="level-icons" style="display: grid; grid-template-columns: repeat(4, auto); gap: 2rem; justify-content: start; margin-top: 2rem;">
+                            <div style="text-align: center;">
+                                <span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;"><i class="fas fa-flask"></i></span>
+                                <p style="font-size: 0.9rem; color: #666;">Sciences</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;"><i class="fas fa-language"></i></span>
+                                <p style="font-size: 0.9rem; color: #666;">Langues</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;"><i class="fas fa-calculator"></i></span>
+                                <p style="font-size: 0.9rem; color: #666;">Mathématiques</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;"><i class="fas fa-users"></i></span>
+                                <p style="font-size: 0.9rem; color: #666;">Vie scolaire</p>
+                            </div>
+                        </div>
+                        <div class="hero-buttons" style="margin-top: 1.5rem;">
+                            <a href="#lycee-approche" class="btn btn-secondary-light">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="content-image slide-in-right">
+                        <img src="./imgs/lycee/HighSchool 1.jpg" alt="Élèves du lycée" loading="lazy" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-image slide-in-right">
+                        <img src="./imgs/lycee/HighSchool 2.jpg" alt="Cours au lycée" loading="lazy">
+                    </div>
+                    <div class="content-text slide-in-left">
+                        <h2>Nos Axes Pédagogiques</h2>
+                        <ul class="objectives-list">
+                            <li>
+                                <span style="color: #7c3aed; font-size: 1.25rem;"><i class="fas fa-graduation-cap"></i></span>
+                                <span>Préparation aux études supérieures avec des méthodes efficaces</span>
+                            </li>
+                            <li>
+                                <span style="color: #7c3aed; font-size: 1.25rem;"><i class="fas fa-book"></i></span>
+                                <span>Approfondissement scientifique et littéraire</span>
+                            </li>
+                            <li>
+                                <span style="color: #7c3aed; font-size: 1.25rem;"><i class="fas fa-user"></i></span>
+                                <span>Accompagnement individualisé</span>
+                            </li>
+                        </ul>
+                        <div class="hero-buttons" style="margin-top: 1rem;">
+                            <a href="contact.html" class="btn btn-primary-2">Contacter nous</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lycee-approche" class="section section-gray">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Approche et Activités</h2>
+                <div class="curriculum-grid">
+                    <div class="curriculum-item slide-in-up">
+                        <div class="curriculum-icon"><i class="fas fa-atom"></i></div>
+                        <h3>Ateliers Scientifiques</h3>
+                        <p>Laboratoires, projets et compétitions académiques</p>
+                    </div>
+                    <div class="curriculum-item slide-in-up" style="animation-delay: 0.1s;">
+                        <div class="curriculum-icon"><i class="fas fa-theater-masks"></i></div>
+                        <h3>Culture et Arts</h3>
+                        <p>Clubs culturels, théâtre et langues</p>
+                    </div>
+                    <div class="curriculum-item slide-in-up" style="animation-delay: 0.2s;">
+                        <div class="curriculum-icon"><i class="fas fa-running"></i></div>
+                        <h3>Sport et Bien-être</h3>
+                        <p>Activités sportives et esprit d'équipe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="./imgs/Logo.jpg" alt="Etablissement Acharaf Logo">
+                        </div>
+                        <h3>ETABLISSEMENT ACHARAF</h3>
+                    </div>
+                    <p>Excellence éducative et innovation pédagogique</p>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <p>Quartier Acharaf, Rue Ihsan Abdelkouddous<br>Marrakesh, Morocco</p>
+                    <p>Tél: +212 5242-91168</p>
+                    <p>Email: acharafinstitut@gmail.com</p>
+                </div>
+
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Niveaux</h4>
+                    <ul>
+                        <li><a href="maternelle.html">Maternelle</a></li>
+                        <li><a href="primaire.html">Primaire</a></li>
+                        <li><a href="college.html">Collège</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2025 <a href="https://eureka-digital.ma/" class="copyright_link"><strong>Eureka digital</strong></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

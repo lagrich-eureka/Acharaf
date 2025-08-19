@@ -6,6 +6,7 @@
     <title>Al Charaf École - À propos</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -33,9 +34,9 @@
                                 </svg>
                             </span>
                             <div class="dropdown-menu">
-                                <a href="maternelle.html">🧸 Maternelle</a>
-                                <a href="primaire.html">🌱 Primaire</a>
-                                <a href="college.html" >🎓 Collège</a>
+                                <a href="maternelle.html"><i class="fas fa-child"></i> Maternelle</a>
+                                <a href="primaire.html"><i class="fas fa-seedling"></i> Primaire</a>
+                                <a href="college.html"><i class="fas fa-user-graduate"></i> Collège</a>
                             </div>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
@@ -54,9 +55,9 @@
                 <a href="about.html">À propos</a>
                 <div class="mobile-submenu">
                     <p style="color: #6b7280; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">Niveaux:</p>
-                    <a href="primaire.html">🌱 Primaire</a>
-                    <a href="college.html">🔬 Collège</a>
-                    <a href="lycee.html">🎓 Lycée</a>
+                    <a href="maternelle.html"><i class="fas fa-child"></i> Maternelle</a>
+                    <a href="primaire.html"><i class="fas fa-seedling"></i> Primaire</a>
+                    <a href="college.html"><i class="fas fa-user-graduate"></i> Collège</a>
                 </div>
                 <a href="contact.html">Contact</a>
             </div>
@@ -65,6 +66,7 @@
 
     <main class="main-content">
         <!-- Page Header -->
+     
         <section class="page-header">
             <div class="container">
                 <h1 class="fade-in">À propos d'Al Charaf École</h1>
@@ -80,12 +82,13 @@
                         <h2>Notre Mission</h2>
                         <p>Al Charaf École s'engage à offrir une éducation d'excellence qui prépare nos élèves à devenir des citoyens responsables, créatifs et épanouis. Notre approche pédagogique innovante combine tradition et modernité pour révéler le potentiel unique de chaque élève.</p>
 
-                        <h2>Notre Vision</h2>
+                        <h2 style="margin-top: 2rem;">Notre Vision</h2>
                         <p>Être reconnu comme un établissement de référence au Maroc, formant des leaders de demain capables de relever les défis du 21ème siècle avec confiance, intégrité et excellence.</p>
+                        <a href="contact.html" class="btn btn-primary-2" style="margin-top: 1rem; display: inline-block;">Contacter nous</a>
                     </div>
 
                     <div class="content-image slide-in-right">
-                        <img src="/placeholder.svg?height=400&width=500&text=School+Building" alt="Al Charaf École">
+                        <img src="./imgs/Outside.jpg" alt="Façade de l'établissement Acharaf" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -98,22 +101,22 @@
 
                 <div class="values-grid">
                     <div class="value-item slide-in-up">
-                        <div class="value-icon">⭐</div>
+                        <div class="value-icon"><i class="fas fa-star"></i></div>
                         <h3>Excellence</h3>
                         <p>Nous visons l'excellence dans tous les aspects de l'éducation</p>
                     </div>
                     <div class="value-item slide-in-up" style="animation-delay: 0.1s;">
-                        <div class="value-icon">💡</div>
+                        <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
                         <h3>Innovation</h3>
                         <p>Nous adoptons les méthodes pédagogiques les plus modernes</p>
                     </div>
                     <div class="value-item slide-in-up" style="animation-delay: 0.2s;">
-                        <div class="value-icon">🤝</div>
+                        <div class="value-icon"><i class="fas fa-handshake"></i></div>
                         <h3>Respect</h3>
                         <p>Le respect mutuel est au cœur de notre communauté</p>
                     </div>
                     <div class="value-item slide-in-up" style="animation-delay: 0.3s;">
-                        <div class="value-icon">🌟</div>
+                        <div class="value-icon"><i class="fas fa-smile"></i></div>
                         <h3>Épanouissement</h3>
                         <p>Chaque élève est unique et mérite de s'épanouir</p>
                     </div>
@@ -121,44 +124,51 @@
             </div>
         </section>
 
-        <!-- Leadership Section -->
+        <!-- Contact Info Section -->
         <section class="section">
             <div class="container">
-                <h2 class="section-title fade-in-up">Notre Direction</h2>
+                <h2 class="section-title fade-in-up">Informations de Contact</h2>
 
-                <div class="leadership-grid">
-                    <div class="leader-card slide-in-up">
-                        <img src="/placeholder.svg?height=250&width=250&text=Director" alt="M. Ahmed Benali" class="leader-image">
-                        <div class="leader-info">
-                            <h3 class="leader-name">M. Ahmed Benali</h3>
-                            <p class="leader-position">Directeur Général</p>
-                            <p class="leader-description">Plus de 20 ans d'expérience dans l'éducation</p>
+                <div class="contact-cards-grid">
+                    <div class="contact-card slide-in-up">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
+                        <h3>Adresse</h3>
+                        <p>Quartier Acharaf, Rue Ihsan Abdelkouddous<br>Marrakesh, Morocco</p>
                     </div>
 
-                    <div class="leader-card slide-in-up" style="animation-delay: 0.2s;">
-                        <img src="/placeholder.svg?height=250&width=250&text=Teacher+Female" alt="Mme. Fatima Alaoui" class="leader-image">
-                        <div class="leader-info">
-                            <h3 class="leader-name">Mme. Fatima Alaoui</h3>
-                            <p class="leader-position">Directrice Pédagogique</p>
-                            <p class="leader-description">Experte en innovation pédagogique</p>
+                    <div class="contact-card slide-in-up" style="animation-delay: 0.2s;">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
+                        <h3>Téléphone</h3>
+                        <p>+212 5242-91168</p>
                     </div>
 
-                    <div class="leader-card slide-in-up" style="animation-delay: 0.4s;">
-                        <img src="/placeholder.svg?height=250&width=250&text=Teacher+Male" alt="M. Omar Tazi" class="leader-image">
-                        <div class="leader-info">
-                            <h3 class="leader-name">M. Omar Tazi</h3>
-                            <p class="leader-position">Responsable Primaire</p>
-                            <p class="leader-description">Spécialiste de l'éducation des jeunes enfants</p>
+                    <div class="contact-card slide-in-up" style="animation-delay: 0.4s;">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
+                        <h3>Email</h3>
+                        <p>acharafinstitut@gmail.com</p>
+                    </div>
+
+                    <div class="contact-card slide-in-up" style="animation-delay: 0.6s;">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Horaires d'Ouverture</h3>
+                        <p>Lundi - Vendredi: 8h00 - 17h00<br>
+                           Samedi: 8h00 - 12h00<br>
+                           Dimanche: Fermé</p>
                     </div>
                 </div>
             </div>
         </section>
 
     <!-- Small Contact Form -->
-        <section class="small-contact-section" style="background: #ffffff;">
+        <section class="small-contact-section" style="background: linear-gradient(135deg, #f8fafc 0%, #e5e7eb 100%);">
             <div class="container" >
                 <!-- Contact Form -->
                     <div class="slide-in-right">
@@ -204,9 +214,9 @@
                                         <label for="niveau">Niveau Concerné</label>
                                         <select id="niveau" name="niveau">
                                             <option value="">Sélectionnez...</option>
-                                            <option value="maternelle">Maternelle (3 - 5 ans)</option>
-                                            <option value="primaire">Primaire (6 - 11 ans)</option>
-                                            <option value="collège">collège (12 - 18 ans)</option>
+                                            <option value="maternelle">Maternelle</option>
+                                            <option value="primaire">Primaire</option>
+                                            <option value="college">Collège</option>
                                             <option value="tous">Tous les niveaux</option>
                                         </select>
                                     </div>
